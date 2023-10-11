@@ -1,17 +1,17 @@
 {
-	"id": "nodebb-plugin-quickstart",
-	"url": "https://github.com/NodeBB/nodebb-plugin-quickstart",
+	"id": "nodebb-plugin-expiretopic",
+	"url": "https://github.com/NodeBB/nodebb-plugin-expiretopic",
 	"library": "./library.js",
 	"hooks": [
 		{ "hook": "static:app.load", "method": "init" },
-		{ "hook": "static:api.routes", "method": "addRoutes" },
-		{ "hook": "filter:admin.header.build", "method": "addAdminNavigation" }
+		{ "hook": "filter:topic.thread_tools", "method": "addTopicThreadTools"},
+		{ "hook": "filter:privileges.topics.get", "method": "getTopicPrivileges"}
 	],
 	"staticDirs": {
 		"static": "./static"
 	},
 	"scss": [
-		"static/scss/quickstart.scss"
+		"static/scss/expiretopic.scss"
 	],
 	"scripts": [
 		"static/lib/main.js"
@@ -20,8 +20,8 @@
 		"static/lib/acp-main.js"
 	],
 	"modules": {
-		"../client/quickstart.js": "./static/lib/quickstart.js",
-		"../admin/plugins/quickstart.js": "./static/lib/admin.js"
+		"../client/topic/expireTopic.js": "./static/modules/expireTopic.js"
 	},
-	"templates": "static/templates"
+	"templates": "static/templates",
+	"languages": "languages"
 }

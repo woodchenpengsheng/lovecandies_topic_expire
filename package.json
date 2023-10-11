@@ -1,16 +1,16 @@
 {
-  "name": "nodebb-plugin-quickstart",
+  "name": "nodebb-plugin-expiretopic",
   "version": "0.4.3",
-  "description": "A starter kit for quickly creating NodeBB plugins",
+  "description": "给topic增加选项，添加过期处理的相关代码",
   "main": "library.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nodebb/nodebb-plugin-quickstart"
+    "url": "https://github.com/nodebb/nodebb-plugin-expiretopic"
   },
   "keywords": [
     "nodebb",
     "plugin",
-    "quickstart",
+    "expiretopic",
     "shell"
   ],
   "husky": {
@@ -27,7 +27,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nodebb/nodebb-plugin-quickstart/issues"
+    "url": "https://github.com/nodebb/nodebb-plugin-expiretopic/issues"
   },
   "readmeFilename": "README.md",
   "nbbpm": {
